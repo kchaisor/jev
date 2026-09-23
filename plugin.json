@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "jev",
+  "version": "1.0.0",
+  "description": "TypeSafe Jev decision/evaluation model via Vercel AI Gateway. Crew bots call evaluate tools (systemone, evaluate, list_models) — not a chat model.",
+  "keywords": [
+    "jev",
+    "typesafe",
+    "evaluation",
+    "decision",
+    "vercel",
+    "ai-gateway",
+    "noul",
+    "boolean",
+    "choice",
+    "score"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "VERCEL_AI_GATEWAY_API_KEY": {
+        "type": "string",
+        "description": "Vercel AI Gateway API key (Bearer). Also accepts AI_GATEWAY_API_KEY as env alias at runtime. Never commit this value."
+      }
+    },
+    "required": ["VERCEL_AI_GATEWAY_API_KEY"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "jev": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/server/index.mjs"],
+      "env": {
+        "VERCEL_AI_GATEWAY_API_KEY": "${VERCEL_AI_GATEWAY_API_KEY}"
+      }
+    }
+  }
+}
